@@ -1,0 +1,163 @@
+{
+  "usp_title_heading": "Free Customization",
+  "usp_main_font_size": 40,
+  "usp_title_color": "#333333",
+  "usp_main_title_font_weight": "700",
+  "usp_main_title_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "usp_description_heading": "Let our design team do it for you!",
+  "usp_description_font_size": 16,
+  "usp_description_color": "#000",
+  "usp_description_font_weight": "400",
+  "usp_description_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "32",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "box_border_radius": {
+    "value": 8,
+    "type": "px"
+  },
+  "box_padding": {
+    "top": {
+      "value": 20,
+      "type": "px"
+    },
+    "right": {
+      "value": 14,
+      "type": "px"
+    },
+    "bottom": {
+      "value": 20,
+      "type": "px"
+    },
+    "left": {
+      "value": 14,
+      "type": "px"
+    }
+  },
+  "usp_image_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "16",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "icon_image_width": 100,
+  "usp_column_title_font_size": 24,
+  "usp_column_title_color": "#333333",
+  "usp_column_title_font_weight": "700",
+  "usp_column_title_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "usp_column_description_font_size": 16,
+  "usp_column_description_color": "#333333",
+  "usp_column_description_font_weight": "400",
+  "usp_column_description_margin": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "usp_array": [
+    {
+      "usp_image": {
+        "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/font-1.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "usp_title": "Your USP Title",
+      "usp_description": "Lorep Ipsum Dolor Sit Amet Consectetur Adipiscing Elit"
+    },
+    {
+      "usp_image": {
+        "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/font-1.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "usp_title": "Your USP Title",
+      "usp_description": "Lorep Ipsum Dolor Sit Amet Consectetur Adipiscing Elit"
+    },
+    {
+      "usp_image": {
+        "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/font-1.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "usp_title": "Your USP Title",
+      "usp_description": "Lorep Ipsum Dolor Sit Amet Consectetur Adipiscing Elit"
+    },
+    {
+      "usp_image": {
+        "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/font-1.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "usp_title": "Your USP Title",
+      "usp_description": "Lorep Ipsum Dolor Sit Amet Consectetur Adipiscing Elit"
+    }
+  ]
+}

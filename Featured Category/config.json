@@ -1,0 +1,148 @@
+{
+  "card_1_background_image": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/bg-featured.jpg",
+    "type": "IMAGE_MANAGER"
+  },
+  "upper_text": "Popular",
+  "upper_text_color": "#BD8A09",
+  "upper_text_font_size": 16,
+  "upper_text_font_weight": "400",
+  "upper_text_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "4",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "card_main_title": "Design Collections",
+  "card_main_title_color": "#333",
+  "card_main_title_font_size": 24,
+  "main_title_font_weight": "700",
+  "main_title_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "4",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "card_description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lapas batchoy",
+  "card_description_font_size": 16,
+  "card_description_color": "#000000",
+  "card_description_margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "4",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "description_font_weight": "400",
+  "cta_visibility": "show",
+  "cta_text": "View category",
+  "cta_link": "#",
+  "cta_background_color": "#F8B60F",
+  "cta_text_color": "#fff",
+  "cta_hover_text_color": "#fff",
+  "cta_hover_background_color": "#F8B60F",
+  "cta_font_size": 16,
+  "cta_padding": {
+    "top": {
+      "value": "12",
+      "type": "px"
+    },
+    "right": {
+      "value": "24",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "12",
+      "type": "px"
+    },
+    "left": {
+      "value": "24",
+      "type": "px"
+    }
+  },
+  "cta_margin": {
+    "top": {
+      "value": "7",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "cta_top_margin": 32,
+  "cta_font_weight": "600",
+  "cta_border_radius": 8,
+  "container_max_width": 100,
+  "columns_gap": 60,
+  "container_alignment": "margin:0 auto;",
+  "card_border_radius": 3,
+  "card_product_link": "/",
+  "card_product_image": {
+    "src": "https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80",
+    "type": "IMAGE_MANAGER"
+  },
+  "main_image_position": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "main_image_width": 100,
+  "image_position": "margin-left: auto;"
+}

@@ -1,0 +1,485 @@
+[ {
+       "type":"tab",
+        "label":"USP Heading settings",
+        "sections":[
+          {
+            "label":"USP Heading Settings",
+            "settings":[
+              {
+                "type":"input",
+                "id":"usp_title_heading",
+                "label":"USP Main Title",
+                "default":"Free Customization"
+              },
+              {
+                "type":"range",
+                "id":"usp_main_font_size",
+                "label":"Title Font Size",
+                "default":40,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"usp_title_color",
+                "label":"Title Color",
+                "default":"#333333"
+              },
+              {
+                "type": "select",
+                "id": "usp_main_title_font_weight",
+                "label": "Font weight",
+                "default": "700",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "boxModel",
+                "label": "USP Title Margins",
+                "id": "usp_main_title_margin",
+                "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "8",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+              },
+              {
+                "type":"input",
+                "id":"usp_description_heading",
+                "label":"USP Description",
+                "default":"Let our design team do it for you!"
+              },
+              {
+                "type":"range",
+                "id":"usp_description_font_size",
+                "label":"Font Size",
+                "default":16,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"usp_description_color",
+                "label":"Description Color",
+                "default":"#000"
+              },
+              {
+                "type": "select",
+                "id": "usp_description_font_weight",
+                "label": "Font weight",
+                "default": "400",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "boxModel",
+                "label": "Description Margins",
+                "id": "usp_description_margin",
+                "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "32",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label":"USP box column Settings",
+            "settings":[
+              {
+                "type":"number",
+                "label":"Box Border Radius",
+                "id":"box_border_radius",
+                "default":{
+                  "value":8,
+                  "type":"px"
+                }
+              },
+              {
+                "type":"number",
+                "label":"Box Padding",
+                "id":"box_padding",
+                "default":{
+                  "top":{
+                    "value":20,
+                    "type":"px"
+                  },
+                  "right":{
+                    "value":14,
+                    "type":"px"
+                  },
+                  "bottom":{
+                    "value":20,
+                    "type":"px"
+                  },
+                  "left":{
+                    "value":14,
+                    "type":"px"
+                  }
+                }
+              }
+            ] 
+          },
+          {
+            "label":"Icon Image Settings",
+            "settings":[
+              {
+                "type":"boxModel",
+                "label":"Icon Image Margins",
+                "id":"usp_image_margin",
+                "default":{
+                  "top":{
+                    "value":"0",
+                    "type":"px"
+                  },
+                  "right":{
+                    "value":"0",
+                    "type":"px"
+                  },
+                  "bottom":{
+                    "value":"16",
+                    "type":"px"
+                  },
+                  "left":{
+                    "value":"0",
+                    "type":"px"
+                  }
+                }
+              },
+              {
+                "type":"range",
+                "label":"Icon Image Width",
+                "id":"icon_image_width",
+                "default": 100,
+                "typeMeta":{
+                  "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":0.1,
+                    "unit":"%"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label":"USP Title Styles",
+            "settings":[
+              {
+                "type":"range",
+                "id":"usp_column_title_font_size",
+                "label":"USP Title Font Size",
+                "default":24,
+                "typeMeta":{
+                  "rangeValues":{
+                    "min": 10,
+                    "max": 50,
+                    "step":0.1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"usp_column_title_color",
+                "label":"USP Title Color",
+                "default":"#333333"
+              },
+              {
+                "type": "select",
+                "id": "usp_column_title_font_weight",
+                "label": "USP Title Font weight",
+                "default": "700",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type":"boxModel",
+                "label":"USP Title Margins",
+                "id":"usp_column_title_margin",
+                "default": {
+                  "top":{ "value": "0", "type": "px" },
+                  "right":{ "value": "0", "type": "px" },
+                  "bottom":{ "value": "8", "type": "px" },
+                  "left":{ "value": "0", "type": "px" }
+                  }
+              }
+            ]
+          },
+          {
+            "label":"USP Description styles",
+            "settings":[
+              {
+                "type":"range",
+                "id":"usp_column_description_font_size",
+                "label":"USP Description Font Size",
+                "default":16,
+                "typeMeta":{
+                  "rangeValues":{
+                    "min": 10,
+                    "max": 50,
+                    "step":0.1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"usp_column_description_color",
+                "label":"USP Description Color",
+                "default":"#333333"
+              },
+              {
+                "type": "select",
+                "id": "usp_column_description_font_weight",
+                "label": "USP Description Font weight",
+                "default": "400",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type":"boxModel",
+                "label":"USP Description Margins",
+                "id":"usp_column_description_margin",
+                "default": {
+                  "top":{ "value": "8", "type": "px" },
+                  "right":{ "value": "0", "type": "px" },
+                  "bottom":{ "value": "8", "type": "px" },
+                  "left":{ "value": "0", "type": "px" }
+                  }
+              }
+            ]
+          }
+        ]
+  },
+  {
+    "type": "array",
+    "label": "USP Contents",
+    "id": "usp_array",
+    "defaultCount": 4,
+    "entryLabel": "USP Tab",
+    "schema": [
+      {
+        "type": "tab",
+        "label": "USP Content",
+        "sections": [
+          {
+            "settings": [
+              {
+                "type": "imageManager",
+                "id": "usp_image",
+                "label": "USP Icon/Image",
+                "default": {
+                  "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/font-1.png",
+                  "type": "IMAGE_MANAGER"
+                }
+              },
+              {
+                "type":"input",
+                "label": "USP Title",
+                "id":"usp_title",
+                "default":"Your USP Title"
+              },
+              {
+                "type":"input",
+                "label": "USP Description",
+                "id":"usp_description",
+                "default":"Lorep Ipsum Dolor Sit Amet Consectetur Adipiscing Elit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

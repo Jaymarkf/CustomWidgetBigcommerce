@@ -1,0 +1,638 @@
+[
+    {
+        "type":"tab",
+        "label":"Featured Category",
+        "sections":[
+            {
+              "label":"Background image",
+              "settings":[
+                {
+                  "type": "imageManager",
+                  "id": "card_1_background_image",
+                  "label":"Card background image",
+                  "default": {
+                    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/bg-featured.jpg",
+                    "type": "IMAGE_MANAGER"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "Main Content Settings",
+              "settings":[
+              {
+                "type":"input",
+                "id":"upper_text",
+                "label":"Upper text",
+                "default":"Popular"
+              },
+              {
+                "type":"color",
+                "id":"upper_text_color",
+                "label":"Upper text color",
+                "default":"#BD8A09"
+              },
+              {
+                "type":"range",
+                "id":"upper_text_font_size",
+                "label":"Upper text font size",
+                "default":16,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 50,
+                    "step":0.5,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type": "select",
+                "id": "upper_text_font_weight",
+                "label": "Upper text font weight",
+                "default": "400",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light (Ultra Light)",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold (Demi Bold)",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold (Ultra Bold)",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black (Heavy)",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "boxModel",
+                "label": "Upper text margin",
+                "id": "upper_text_margin",
+                "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "4",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+              },
+              {
+                "type":"input",
+                "id":"card_main_title",
+                "label":"Card main title",
+                "default":"Design Collections"
+              },
+              {
+                "type":"color",
+                "id":"card_main_title_color",
+                "label":"Card main title color",
+                "default":"#333"
+              },
+              {
+                "type":"range",
+                "id":"card_main_title_font_size",
+                "label":"Main title font size",
+                "default":24,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 50,
+                    "step":0.5,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type": "select",
+                "id": "main_title_font_weight",
+                "label": "Main title font weight",
+                "default": "700",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light (Ultra Light)",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold (Demi Bold)",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold (Ultra Bold)",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black (Heavy)",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "boxModel",
+                "label": "Main title margin",
+                "id": "main_title_margin",
+                "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "4",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+              },
+              {
+                "type":"input",
+                "label":"Card description",
+                "default":"lorem ipsum dolor sit amet, consectetur adipiscing elit. lapas batchoy",
+                "id":"card_description"
+              },
+              {
+                "type":"range",
+                "id":"card_description_font_size",
+                "label":"Description font size",
+                "default":16,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 50,
+                    "step":0.5,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "default":"#000000",
+                "label":"Card description text color",
+                "id":"card_description_color"
+              },
+      
+              {
+                "type": "boxModel",
+                "label": "Card description margin",
+                "id": "card_description_margin",
+                "default": {
+                  "top": {
+                      "value": "0",
+                      "type": "px"
+                    },
+                  "right": {
+                      "value": "0",
+                      "type": "px"
+                      },
+                  "bottom":{
+                      "value": "4",
+                      "type": "px"
+                      },
+                  "left": {
+                      "value": "0",
+                      "type": "px"
+                      }
+                  }
+              },
+              {
+                "type": "select",
+                "id": "description_font_weight",
+                "label": "Description font weight",
+                "default": "400",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light (Ultra Light)",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold (Demi Bold)",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold (Ultra Bold)",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black (Heavy)",
+                      "value": "900"
+                    }
+                  ] 
+                }
+              },
+              {
+                "type":"visibility",
+                "label":"CTA Visibility",
+                "id":"cta_visibility",
+                "default":"show"
+              },
+              {
+                "type":"input",
+                "label":"CTA text",
+                "id":"cta_text",
+                "default":"View category"
+              },
+              {
+                "type":"input",
+                "label": "CTA link",
+                "id": "cta_link",
+                "default":"#"
+              },
+              {
+                "type":"color",
+                "label":"CTA background color",
+                "id":"cta_background_color",
+                "default":"#F8B60F"
+              },
+              {
+                "type":"color",
+                "label":"CTA text color",
+                "id":"cta_text_color",
+                "default":"#fff"
+              },
+              {
+                "type":"color",
+                "label":"CTA hover text color",
+                "id":"cta_hover_text_color",
+                "default":"#fff"
+              },
+              {
+                "type":"color",
+                "label":"CTA hover background color",
+                "id":"cta_hover_background_color",
+                "default":"#F8B60F"
+              },
+              {
+                "type":"range",
+                "label": "CTA font size",
+                "default":16,
+                "id":"cta_font_size",
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 50,
+                    "step":0.5,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type": "boxModel",
+                "label": "CTA paddings",
+                "id": "cta_padding",
+                "default": {
+                  "top": {
+                      "value": "12",
+                      "type": "px"
+                    },
+                  "right": {
+                      "value": "24",
+                      "type": "px"
+                      },
+                  "bottom":{
+                      "value": "12",
+                      "type": "px"
+                      },
+                  "left": {
+                      "value": "24",
+                      "type": "px"
+                      }
+                  }
+              },
+              {
+                "type": "boxModel",
+                "label": "CTA margin",
+                "id": "cta_margin",
+                "default": {
+                  "top": {
+                      "value": "7",
+                      "type": "px"
+                    },
+                  "right": {
+                      "value": "0",
+                      "type": "px"
+                      },
+                  "bottom":{
+                      "value": "0",
+                      "type": "px"
+                      },
+                  "left": {
+                      "value": "0",
+                      "type": "px"
+                      }
+                  }
+              },
+              {
+                "type":"range",
+                "label": "CTA top margin",
+                "default":32,
+                "id":"cta_top_margin",
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":0.5,
+                    "unit":"px"
+                    }
+                  }
+                },
+                {
+                  "type": "select",
+                  "id": "cta_font_weight",
+                  "label": "CTA font weight",
+                  "default": "600",
+                  "typeMeta": {
+                    "selectOptions": [
+                      {
+                        "label": "Thin",
+                        "value": "100"
+                      },
+                      {
+                        "label": "Extra Light (Ultra Light)",
+                        "value": "200"
+                      },
+                      {
+                        "label": "Light",
+                        "value": "300"
+                      },
+                      {
+                        "label": "Normal",
+                        "value": "400"
+                      },
+                      {
+                        "label": "Medium",
+                        "value": "500"
+                      },
+                      {
+                        "label": "Semi Bold (Demi Bold)",
+                        "value": "600"
+                      },
+                      {
+                        "label": "Bold",
+                        "value": "700"
+                      },
+                      {
+                        "label": "Extra Bold (Ultra Bold)",
+                        "value": "800"
+                      },
+                      {
+                        "label": "Black (Heavy)",
+                        "value": "900"
+                      }
+                    ]
+                  }
+                },
+                {
+                    "type":"range",
+                    "label": "CTA border radius",
+                    "default":8,
+                    "id":"cta_border_radius",
+                    "typeMeta":{
+                        "rangeValues":{
+                        "min": 0,
+                        "max": 100,
+                        "step":0.5,
+                        "unit":"px"
+                    }
+                  }
+                }
+             ]
+            },
+            {
+              "label": "Main Container",
+              "settings":[
+                {
+                  "type":"range",
+                  "id":"container_max_width",
+                  "label":"Container max width",
+                  "default":100,
+                  "typeMeta":{
+                      "rangeValues":{
+                      "min": 0,
+                      "max": 100,
+                      "step":0.1,
+                      "unit":"px"
+                      }
+                  }
+                },
+                {
+                  "type":"range",
+                  "id":"columns_gap",
+                  "label":"Columns gap",
+                  "default":60,
+                  "typeMeta":{
+                      "rangeValues":{
+                      "min": 0,
+                      "max": 1000,
+                      "step":0.1,
+                      "unit":"px"
+                      }
+                  }
+                },
+                {
+                  "type": "select",
+                  "id": "container_alignment",
+                  "label": "Container alignment",
+                  "default": "margin:0 auto;",
+                  "typeMeta": {
+                    "selectOptions": [
+                        {
+                          "label":"right",
+                          "value":"margin-left: auto;"
+                        },
+                        {
+                          "label":"left",
+                          "value":"margin-right: auto;"
+                        },
+                        {
+                          "label":"center",
+                          "value":"margin:0 auto;"
+                        }
+                    ]
+                  }
+                },
+                {
+                  "type":"range",
+                  "id":"card_border_radius",
+                  "label":"Container border radius",
+                  "default":3,
+                  "typeMeta":{
+                      "rangeValues":{
+                      "min": 0,
+                      "max": 50,
+                      "step":0.5,
+                      "unit":"px"
+                      }
+                  }
+                }
+              ]
+            },
+            {
+              "label":"Main Image Settings",
+              "settings":[
+                {
+                  "type": "input",
+                  "id": "card_product_link",
+                  "label": "Image Link",
+                  "default":"#"
+                },
+                {
+                  "type": "imageManager",
+                  "id": "card_product_image",
+                  "label":"Card product image",
+                  "default": {
+                    "src": "https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80",
+                    "type": "IMAGE_MANAGER"
+                  }
+                },
+                {
+                  "type":"boxModel",
+                  "label":"Main image position",
+                  "id":"main_image_position",
+                  "default":{
+                    "top":{
+                      "value":"0",
+                      "type":"px"
+                    },
+                    "right":{
+                      "value":"0",
+                      "type":"px"
+                    },
+                    "bottom":{
+                      "value":"0",
+                      "type":"px"
+                    },
+                    "left":{
+                      "value":"0",
+                      "type":"px"
+                    }
+                  }
+                },
+                {
+                  "type":"range",
+                  "id":"main_image_width",
+                  "label":"Main image width (%)",
+                  "default":100,
+                  "typeMeta":{
+                      "rangeValues":{
+                      "min": 0,
+                      "max": 100,
+                      "step":0.1,
+                      "unit":"px"
+                      }
+                  }
+                },
+                {
+                  "type": "select",
+                  "id": "image_position",
+                  "label": "Image Position",
+                  "default": "margin-left: auto;",
+                  "typeMeta": {
+                    "selectOptions": [
+                        {
+                          "label":"right",
+                          "value":"margin-left: auto;"
+                        },
+                        {
+                          "label":"left",
+                          "value":"margin-right: auto;"
+                        },
+                        {
+                          "label":"center",
+                          "value":"margin:0 auto;"
+                        }
+                    ]
+                  }
+                }
+              ]
+            }
+            
+        ]
+    }
+]

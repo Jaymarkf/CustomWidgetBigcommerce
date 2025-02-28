@@ -1,0 +1,136 @@
+{
+  "containerBackgroundImage": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/cta-section.jpg?t=1714370440",
+    "type": "IMAGE_MANAGER"
+  },
+  "containerMaxWidth": 1015,
+  "containerPadding": {
+    "top": {
+      "value": "25",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "25",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "leftImage": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/img.png?t=1714372109",
+    "type": "IMAGE_MANAGER"
+  },
+  "leftImageWidth": 100,
+  "rightImage": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/img-1.png?t=1714372111",
+    "type": "IMAGE_MANAGER"
+  },
+  "rightImageWidth": 100,
+  "title": "Request a Free Quote",
+  "titleColor": "#000000",
+  "titleSize": 40,
+  "titleMargin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "fontWeightTitle": "600",
+  "descriptionText": "When someone visits your church for the first time, what will be their first impression? Are they finding their way around your building without getting lost? Is your visual message clear and consistent throughout every banner/sign that is presented to them? Get a Free Quote Contact Us ",
+  "descriptionColor": "#000000",
+  "descriptionSize": 14,
+  "descriptionFontWeight": "400",
+  "descriptionMargin": {
+    "top": {
+      "value": "32",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "32",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "CTAButtonGap": 24,
+  "buttonText": "Get a Free Quote",
+  "rfq_get_free_quote": "#",
+  "buttonTextColor": "#1e1e1e",
+  "buttonHoverTextColor": "#ffffff",
+  "buttonBackgroundColor": "#ffffff",
+  "buttonHoverBackgroundColor": "#e5ac17",
+  "buttonFontWeight": "700",
+  "buttonSize": 16,
+  "buttonPadding": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "14",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "14",
+      "type": "px"
+    }
+  },
+  "buttonBorderRadius": 8,
+  "ctaText": "Contact Us",
+  "rfq_contact_us": "#",
+  "ctaFontWeight": "700",
+  "ctaTextColor": "#1e1e1e",
+  "ctaHoverTextColor": "#ffffff",
+  "ctaBackgroundColor": "#000000",
+  "ctaHoverColor": "#ffff00",
+  "ctaHoverBackgroundColor": "#000000",
+  "ctaSize": 16,
+  "ctaPadding": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "14",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "14",
+      "type": "px"
+    }
+  },
+  "ctaBorderRadius": 8,
+  "ctaBorderColor": "#333"
+}

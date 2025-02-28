@@ -1,0 +1,182 @@
+<style>
+    .main-container-rqf-{{_.id}} a,
+    .main-container-rqf-{{_.id}} h2,
+    .main-container-rqf-{{_.id}} p,
+    .main-container-rqf-{{_.id}} button {
+        font-family: "Mulish", sans-serif;
+    }
+
+    .main-container-rqf-{{_.id}} {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-left:{{containerPadding.left.value}}{{containerPadding.left.type}};
+        padding-right:{{containerPadding.right.value}}{{containerPadding.right.type}};
+        padding-top:{{containerPadding.top.value}}{{containerPadding.top.type}};
+        padding-bottom:{{containerPadding.bottom.value}}{{containerPadding.bottom.type}};
+    }
+
+    .container-rfq-background-image-{{_.id}} {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .container-main-content-rfq-{{_.id}} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width:{{containerMaxWidth}}px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .col-r-{{_.id}},.col-l-{{_.id}} {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .right-image-{{_.id}} {
+        width:{{rightImageWidth}}%;
+        position: relative;
+        top:{{rightImagePositionYAxis}}px;
+        left:{{rightImagePositionXAxis}}px;
+    }
+
+    .col-c-{{_.id}} {
+        width: 100%;
+    }
+
+    .title-rfq-{{_.id}} {
+        display: block;
+        text-align: center;
+        margin-left:{{titleMargin.left.value}}{{titleMargin.left.type}};
+        margin-right:{{titleMargin.right.value}}{{titleMargin.right.type}};
+        margin-top:{{titleMargin.top.value}}{{titleMargin.top.type}};
+        margin-bottom:{{titleMargin.bottom.value}}{{titleMargin.bottom.type}};
+        color: {{titleColor}};
+        font-weight: {{fontWeightTitle}};
+        font-size: {{titleSize}}px;
+        line-height: 50.2px;
+        
+    }
+
+    .text-rfq-{{_.id}} {
+        margin-left:{{descriptionMargin.left.value}}{{descriptionMargin.left.type}};
+        margin-right:{{descriptionMargin.right.value}}{{descriptionMargin.right.type}};
+        margin-top:{{descriptionMargin.top.value}}{{descriptionMargin.top.type}};
+        margin-bottom:{{descriptionMargin.bottom.value}}{{descriptionMargin.bottom.type}};
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: {{descriptionColor}};
+        font-size: {{descriptionSize}}px;
+        line-height: 24px;
+        font-weight: {{descriptionFontWeight}};
+    }
+
+    .container-cta-buttons-{{_.id}} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:{{CTAButtonGap}}px;
+    }
+
+    .btn-cta-rqf-{{_.id}} {
+        font-size: {{buttonSize}}px;
+        font-weight: {{buttonFontWeight}};
+        color: {{buttonTextColor}};
+        line-height: 24px;
+        width: max-content;
+        padding-left:{{buttonPadding.left.value}}{{buttonPadding.left.type}};
+        padding-right:{{buttonPadding.right.value}}{{buttonPadding.right.type}};
+        padding-top:{{buttonPadding.top.value}}{{buttonPadding.top.type}};
+        padding-bottom:{{buttonPadding.bottom.value}}{{buttonPadding.bottom.type}};
+        text-decoration: none;
+        display: block;
+        border-radius: {{buttonBorderRadius}}px;
+        border:none;
+        background-color:{{buttonBackgroundColor}};
+        cursor:pointer;
+    }
+    .btn-cta-rqf-{{_.id}}:hover {
+        background-color:{{buttonHoverBackgroundColor}};
+        color:{{buttonHoverTextColor}};
+    }
+
+    .btn-cta-contact-{{_.id}}   {
+        font-size: {{ctaText}}px;
+        font-weight: {{ctaFontWeight}};
+        color: {{ctaTextColor}};
+        line-height: 24px;
+        width: max-content;
+        padding-left:{{ctaPadding.left.value}}{{ctaPadding.left.type}};
+        padding-right:{{ctaPadding.right.value}}{{ctaPadding.right.type}};
+        padding-top:{{ctaPadding.top.value}}{{ctaPadding.top.type}};
+        padding-bottom:{{ctaPadding.bottom.value}}{{ctaPadding.bottom.type}};
+        text-decoration: none;
+        display: block;
+        border-radius: {{ctaBorderRadius}}px;
+        border: 1px solid {{ctaBorderColor}};
+        cursor:pointer;
+    }
+    .btn-cta-contact-{{_.id}}:hover {
+        background-color:{{ctaHoverBackgroundColor}};
+        color:{{ctaHoverTextColor}};
+    }
+
+    .left-image-{{_.id}} {
+        width:{{leftImageWidth}}%;
+        position:relative;
+        top:{{leftImagePositionYAxis}}px;
+        left:{{leftImagePositionXAxis}}px;
+    }
+    @media(max-width:800px){
+        .container-main-content-rfq-{{_.id}} {
+            flex-wrap:wrap;
+        }
+        .col-r-{{_.id}}{
+            order:2;
+        }
+        .col-r-{{_.id}},.col-l-{{_.id}} {
+            width:50%;
+        }
+        .text-rfq-{{_.id}}{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .title-rfq-{{_.id}}{
+           font-size:32px;
+        }
+    }
+</style>
+<div class="main-container-rqf-{{_.id}}">
+    <img class="container-rfq-background-image-{{_.id}}" src="{{containerBackgroundImage.src}}"
+        alt="{{title}}-backgroundImage" />
+    <div class="container-main-content-rfq-{{_.id}}">
+        <div class="col-r-{{_.id}}">
+            <img src="{{leftImage.src}}"
+                class="left-image-{{_.id}}"
+                alt="Right Image Request a Free Quote" />
+           
+         </div>
+        <div class="col-c-{{_.id}}">
+            <h2 class="title-rfq-{{_.id}}">{{title}}</h2>
+            <p class="text-rfq-{{_.id}}">{{descriptionText}}</p>
+            <div class="container-cta-buttons-{{_.id}}">
+                <a href="{{rfq_get_free_quote}}" class="btn-cta-rqf-{{_.id}}">{{buttonText}}</a>
+                <a href="{{rfq_contact_us}}" class="btn-cta-contact-{{_.id}}">{{ctaText}}</a>
+            </div>
+        </div>
+        <div class="col-l-{{_.id}}">
+            <img src="https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/img-1.png?t=1714372111"
+                class="right-image-{{_.id}}"
+                alt="Left Image Request a Free Quote" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+
+<style>
+        .container-featured-category-{{_.id}}{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            border-radius:{{card_border_radius}}px;
+            overflow:hidden;
+            max-width:{{container_max_width}}%;
+            {{container_alignment}}
+
+        }
+        .col-feature-{{_.id}}{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:16px;
+            position:relative;
+            width:100%;
+            overflow:hidden;
+            gap:{{columns_gap}}px;
+            padding-left:30px;
+            padding-right:30px;
+            padding-top:15px;
+            padding-bottom:15px;
+            text-decoration:none;
+        
+        }   
+        @media(max-width:1024px){
+            .col-feature-{{_.id}}{
+                gap:25px;
+            }
+        }
+                                                                                                                                                                                                                                                                                                                                                                      
+        .col-1-f-{{_.id}}{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+        .upper-small-text-{{_.id}}{
+            font-size: {{upper_text_font_size}}px;
+            color:{{upper_text_color}};
+            display:block;
+            margin-top: {{upper_text_margin.top.value}}{{upper_text_margin.top.type}};
+            margin-right: {{upper_text_margin.right.value}}{{upper_text_margin.right.type}};
+            margin-bottom: {{upper_text_margin.bottom.value}}{{upper_text_margin.bottom.type}};
+            margin-left: {{upper_text_margin.left.value}}{{upper_text_margin.left.type}};
+            font-weight:{{upper_text_font_weight}};
+        }
+        .main-card-text-{{_.id}}{
+            font-size:{{card_main_title_font_size}}px;
+            color:{{card_main_title_color}};
+            display:block;
+            font-weight:{{main_title_font_weight}};
+            margin-top: {{main_title_margin.top.value}}{{main_title_margin.top.type}};
+            margin-right: {{main_title_margin.right.value}}{{main_title_margin.right.type}};
+            margin-bottom: {{main_title_margin.bottom.value}}{{main_title_margin.bottom.type}};
+            margin-left: {{main_title_margin.left.value}}{{main_title_margin.left.type}};
+        }
+        .card-description-{{_.id}}{
+            font-size:{{card_description_font_size}}px;
+            color:{{card_description_color}};
+            display:block;
+            margin-top: {{card_description_margin.top.value}}{{card_description_margin.top.type}};
+            margin-right: {{card_description_margin.right.value}}{{card_description_margin.right.type}};
+            margin-bottom: {{card_description_margin.bottom.value}}{{card_description_margin.bottom.type}};
+            margin-left: {{card_description_margin.left.value}}{{card_description_margin.left.type}};
+            font-weight:{{description_font_weight}};
+        }
+        .col-content-f-{{_.id}}{
+            text-align:left;
+        }
+        .btn-featured-{{_.id}}{
+            background-color:{{cta_background_color}};
+            color:{{cta_text_color}};
+            text-decoration:none;
+            font-size:{{cta_font_size}}px;
+            padding-top:{{cta_padding.top.value}}{{cta_padding.top.type}};
+            padding-bottom:{{cta_padding.bottom.value}}{{cta_padding.bottom.type}};
+            padding-left:{{cta_padding.left.value}}{{cta_padding.left.type}};
+            padding-right:{{cta_padding.right.value}}{{cta_padding.right.type}};
+            display:block;
+            width:max-content;
+            font-family:'Gotham',sans-serif;
+            font-weight:{{cta_font_weight}};
+            margin-top:{{cta_top_margin}}px;
+            border-radius:{{cta_border_radius}}px;
+        }
+        .btn-featured-{{_.id}}:hover{
+            background-color:{{cta_hover_background_color}};
+            color:{{cta_hover_text_color}};
+        }
+        .main-img-br-{{_.id}}{
+            position:relative;
+            top: {{main_image_position.top.value}}{{main_image_position.top.type}};
+            right: {{main_image_position.right.value}}{{main_image_position.right.type}};
+            bottom: {{main_image_position.bottom.value}}{{main_image_position.bottom.type}};
+            left: {{main_image_position.left.value}}{{main_image_position.left.type}};
+            display:block;
+            width:{{main_image_width}}%;
+            {{image_position}}
+        }
+        .col-imgage-f-{{_.id}}{
+            width:50%;
+        }
+        @media(max-width:1024px){
+            .col-imgage-f-{{_.id}}{
+                width:95%;
+            }
+        }
+        @media(max-width:550px){
+            .col-imgage-f-{{_.id}}{
+                width:100%;
+            }
+            .col-feature-{{_.id}}{
+                flex-direction:column-reverse;
+                padding:0;
+            }
+            .col-content-f-{{_.id}}{
+                padding-left:10px;
+                padding-right:10px;
+                padding-bottom:20px;
+            }
+        }
+        a.cta_main_image-{{_.id}}:hover img{
+          filter:brightness(0.95);
+        }
+    </style>
+    
+
+    <div class="container-featured-category-{{_.id}}">
+        <div class="col-feature-{{_.id}}" href="{{cta_link}}">
+                 <img class="col-1-f-{{_.id}}" src="{{card_1_background_image.src}}" alt="img bg">
+                <div class="col-content-f-{{_.id}}">
+                    <span class="upper-small-text-{{_.id}} mulish">{{upper_text}}</span>
+                    <p class="main-card-text-{{_.id}} mulish">{{card_main_title}}</p>
+                    <span class="card-description-{{_.id}} mulish">{{card_description}}</span>
+                    {{#if cta_visibility '==' 'show'}}
+                        <a class="btn-featured-{{_.id}} mulish" href="{{cta_link}}">{{cta_text}}</a>
+                    {{/if}}
+                </div>
+                <div class="col-imgage-f-{{_.id}}">
+                    {{#if card_product_link '!=' '#'}}
+                        <a href="{{card_product_link}}" class="cta_main_image-{{_.id}}">
+                    {{/if}}
+                            <img  class="main-img-br-{{_.id}}" src="{{card_product_image.src}}" alt="design collection image"/>
+                    {{#if card_product_link '!=' '#'}}
+                        </a>
+                    {{/if}}
+                </div>
+        </div> 
+    </div>
+
+

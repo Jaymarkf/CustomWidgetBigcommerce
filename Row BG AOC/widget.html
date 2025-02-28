@@ -1,0 +1,159 @@
+
+<style>
+.container-custom-design-section-{{_.id}}{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:{{container_padding.left.value}}{{container_padding.left.type}};
+    padding-right:{{container_padding.right.value}}{{container_padding.right.type}};
+    padding-top:{{container_padding.top.value}}{{container_padding.top.type}};
+    padding-bottom:{{container_padding.bottom.value}}{{container_padding.bottom.type}};
+}
+.background-image-{{_.id}}{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+}
+.col-custom-row-{{_.id}}{
+    position:relative;
+    z-index:1;
+}
+
+.title-{{_.id}}{
+    display:block;
+    text-align:left;
+    width:100%;
+    margin-left:{{title_spacing.left.value}}{{title_spacing.left.type}};
+    margin-top:{{title_spacing.top.value}}{{title_spacing.top.type}};
+    margin-right:{{title_spacing.right.value}}{{title_spacing.right.type}};
+    margin-bottom:{{title_spacing.bottom.value}}{{title_spacing.bottom.type}};
+    font-size:{{title_font_size}}px;
+    color:{{title_color}};
+    font-family:"Mulish",sans-serif;
+    font-weight:{{title_font_weight}};
+}
+.description-{{_.id}}{
+    display:block;
+    width:100%;
+    text-align:left;
+    color:{{description_color}};
+    font-size:{{description_font_size}}px;
+    font-family:"Mulish",sans-serif;
+    font-weight:{{description_font_weight}};
+    margin-left:{{description_spacing.left.value}}{{description_spacing.left.type}};
+    margin-right:{{description_spacing.right.value}}{{description_spacing.right.type}};
+    margin-top:{{description_spacing.top.value}}{{description_spacing.top.type}};
+    margin-bottom:{{description_spacing.bottom.value}}{{description_spacing.bottom.type}};
+}
+
+.cta-custom-{{_.id}}{
+    display: block;
+    width: max-content;
+    color: {{cta_color}};
+    text-decoration: none;
+    text-align: left;
+    background-color: {{cta_background_color}};
+    padding-left:{{cta_padding.left.value}}{{cta_padding.left.type}};
+    padding-right:{{cta_padding.right.value}}{{cta_padding.right.type}};
+    padding-bottom:{{cta_padding.bottom.value}}{{cta_padding.bottom.type}};
+    padding-top:{{cta_padding.top.value}}{{cta_padding.top.type}};
+    font-size: {{cta_font_size}}px;
+    border-radius: {{cta_border_radius}}px;
+    margin-top:{{cta_margin.top.value}}{{cta_margin.top.type}};
+    margin-bottom:{{cta_margin.bottom.value}}{{cta_margin.bottom.type}};
+    margin-left:{{cta_margin.left.value}}{{cta_margin.left.type}};
+    margin-right:{{cta_margin.right.value}}{{cta_margin.right.type}};
+    font-family:"Mulish",sans-serif;
+    font-weight:{{cta_font_weight}};
+}
+.cta-custom-{{_.id}}:hover{
+    color:{{hover_cta_text_color}};
+    background-color:{{hover_cta_background_color}};
+}
+.container-cta-{{_.id}}{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    width:100%;
+    
+}
+.col-custom-row-1-{{_.id}}{
+ width:{{column_1_width}}%;
+ max-width: 752px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ padding-left:{{column_1_padding.left.value}}{{column_1_padding.left.type}};
+ padding-right:{{column_1_padding.right.value}}{{column_1_padding.right.type}};
+ padding-top:{{column_1_padding.top.value}}{{column_1_padding.top.type}};
+ padding-bottom:{{column_1_padding.bottom.value}}{{column_1_padding.bottom.type}};
+}
+.col-custom-row-2-{{_.id}}{
+{{#if column_2_width '==' '0'}}
+width:max-content;
+{{else}}
+width:{{column_2_width}}%;
+{{/if}}
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding-left:{{column_2_padding.left.value}}{{column_2_padding.left.type}};
+ padding-right:{{column_2_padding.right.value}}{{column_2_padding.right.type}};
+ padding-top:{{column_2_padding.top.value}}{{column_2_padding.top.type}};
+ padding-bottom:{{column_2_padding.bottom.value}}{{column_2_padding.bottom.type}};
+}
+.mainimage-{{_.id}}{
+    width:100%;
+    position:relative;
+    top:{{image_y_position}}px;
+    left:{{image_x_position}}px;
+}
+@media(max-width:1183px){
+    .col-custom-row-2-{{_.id}} img{
+        max-width:350px;
+    }
+}
+@media(max-width:827px){
+    .col-custom-row-2-{{_.id}} img{
+        max-width:265px;
+    }
+}
+@media(max-width:800px){
+   .container-custom-design-section-{{_.id}}{
+        flex-direction:column-reverse;
+   } 
+   .mainimage-{{_.id}}, .col-custom-row-1-{{_.id}}{
+    width:100%;
+   }
+}
+@media(max-width:500px){
+    .container-custom-design-section-{{_.id}}{
+        padding-left:20px;
+        padding-right:20px;
+    }
+} 
+</style>
+<div class="container-custom-design-section container-custom-design-section-{{_.id}}">
+    <img class="background-image background-image-{{_.id}}" src="{{container_background_image.src}}" alt="custom churchbanners background image"/>
+    <div class="col-custom-row col-custom-row-1 col-custom-row-{{_.id}} col-custom-row-1-{{_.id}}">
+            <span class="title title-{{_.id}}">{{title_text}}</span>
+            <span class="description description-{{_.id}}">
+                {{description_text}}
+            </span> 
+            <div class="container-cta container-cta-{{_.id}}">
+                <a href="{{cta_link}}" class="cta-custom cta-custom-{{_.id}}">{{cta_text}}</a>
+            </div>
+    </div>
+    <div class="col-custom-row col-custom-row-2 col-custom-row-{{_.id}} col-custom-row-2-{{_.id}}">
+        <img class="mainimage mainimage-{{_.id}}" src="{{main_image.src}}" class="lazyload" alt="church banner custom design"/>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+<style>
+.musp-title-{{_.id}} {
+    font-size: {{usp_main_font_size}}px;
+    font-weight: {{usp_main_title_font_weight}};
+    color: {{usp_title_color}};
+    margin-left:{{usp_main_title_margin.left.value}}{{usp_main_title_margin.left.type}};
+    margin-right:{{usp_main_title_margin.right.value}}{{usp_main_title_margin.right.type}};
+    margin-top:{{usp_main_title_margin.top.value}}{{usp_main_title_margin.top.type}};
+    margin-bottom:{{usp_main_title_margin.bottom.value}}{{usp_main_title_margin.bottom.type}};
+    padding: 0;
+    font-family:'Mulish', sans-serif;
+}
+.musp-description-{{_.id}} {
+    font-size: {{usp_description_font_size}}px;
+    font-weight: {{usp_description_font_weight}};
+    color: {{usp_description_color}};
+    margin-left:{{usp_description_margin.left.value}}{{usp_description_margin.left.type}};
+    margin-right:{{usp_description_margin.right.value}}{{usp_description_margin.right.type}};
+    margin-top:{{usp_description_margin.top.value}}{{usp_description_margin.top.type}};
+    margin-bottom:{{usp_description_margin.bottom.value}}{{usp_description_margin.bottom.type}};
+    padding: 0;
+    font-family:'Mulish', sans-serif;
+}
+.container-main-usp-{{_.id}}{
+    width:100%;
+}
+.container-usp-contents-{{_.id}}{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+.col-usp-{{_.id}}{
+    border:1px solid #C4C4C4;
+    border-radius:{{box_border_radius.value}}px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex:1 1 calc(100% / 4 - 39px);
+    padding-left:{{box_padding.left.value}}{{box_padding.left.type}};
+    padding-right:{{box_padding.right.value}}{{box_padding.right.type}};
+    padding-top:{{box_padding.top.value}}{{box_padding.top.type}};
+    padding-bottom:{{box_padding.bottom.value}}{{box_padding.bottom.type}};
+}
+.container-icon-usp-{{_.id}}{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.usp-icon-img-{{_.id}}{
+    margin-left:{{usp_image_margin.left.value}}{{usp_image_margin.left.type}};
+    margin-right:{{usp_image_margin.right.value}}{{usp_image_margin.right.type}};
+    margin-top:{{usp_image_margin.top.value}}{{usp_image_margin.top.type}};
+    margin-bottom:{{usp_image_margin.bottom.value}}{{usp_image_margin.bottom.type}};
+    width:{{icon_image_width}}%;
+    text-align: center;
+}
+
+.usp-title-{{_.id}}{
+    font-size: {{usp_column_title_font_size}}px;
+    font-weight:{{usp_column_title_font_weight}};
+    font-family:'Mulish', sans-serif;
+    margin-left:{{usp_column_title_margin.left.value}}{{usp_column_title_margin.left.type}};
+    margin-right:{{usp_column_title_margin.right.value}}{{usp_column_title_margin.right.type}};
+    margin-top:{{usp_column_title_margin.top.value}}{{usp_column_title_margin.top.type}};
+    margin-bottom:{{usp_column_title_margin.bottom.value}}{{usp_column_title_margin.bottom.type}};
+    text-align: center;
+    display:block;
+    color:{{usp_column_title_color}};
+}
+.usp-description-{{_.id}}{
+    font-size:{{usp_column_description_font_size}}px;
+    font-weight:{{usp_column_description_font_weight}};
+    color:{{usp_column_description_color}};
+    font-family:'Mulish', sans-serif;
+    margin-left:{{usp_column_description_margin.left.value}}{{usp_column_description_margin.left.type}};
+    margin-right:{{usp_column_description_margin.right.value}}{{usp_column_description_margin.right.type}};
+    margin-top:{{usp_column_description_margin.top.value}}{{usp_column_description_margin.top.type}};
+    margin-bottom:{{usp_column_description_margin.bottom.value}}{{usp_column_description_margin.bottom.type}};
+    text-align: center;
+    display:block;
+}
+@media(max-width:800px){
+    .col-usp-{{_.id}}{
+        flex: 1 1 calc(100% / 2 - 39px);
+    }
+}
+@media(max-width:550px){
+    .col-usp-{{_.id}}{
+        flex: 1 1 100%;
+        padding:12px 8px;
+    }
+    .musp-title-{{_.id}},.musp-description-{{_.id}} {
+        text-align:center;
+    }
+}
+</style>
+<div class="container-main-usp">
+    <div class="container-head-section container-head-section-{{_.id}}">
+        <p class="musp-title musp-title-{{_.id}}">{{usp_title_heading}}</p>
+        <p class="musp-description musp-description-{{_.id}}">{{usp_description_heading}}</p>
+    </div>
+    <div class="container-usp-contents container-usp-contents-{{_.id}}">
+        {{#each usp_array}}
+        <div class="col-usp col-usp-{{../_.id}}">
+            <div class="container-icon-usp container-icon-usp-{{../_.id}}">
+                <img class="lazyload usp-icon-img usp-icon-img-{{../_.id}}" data-src="{{usp_image.src}}" src="{{cdn 'img/loading.svg'}}" alt="USP {{@index}}">
+            </div>
+            <div class="content-text-usp content-text-usp-{{../_.id}}">
+                <span class="usp-title usp-title-{{../_.id}}">{{usp_title}}</span>
+                <span class="usp-description usp-description-{{../_.id}}">{{usp_description}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

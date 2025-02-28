@@ -1,0 +1,643 @@
+[
+  {
+    "type": "tab",
+    "label": "RFQ",
+    "sections": [
+      {
+        "label": "Container Settings",
+        "settings": [
+          {
+            "type": "imageManager",
+            "id": "containerBackgroundImage",
+            "label": "Background Image",
+            "default": {
+              "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/cta-section.jpg?t=1714370440",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "range",
+            "id": "containerMaxWidth",
+            "label": "Contain Max Width",
+            "default": 1015,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 2000,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type":"boxModel",
+            "id":"containerPadding",
+            "label":"Container Padding",
+            "default": {
+              "top": {
+                "value": "25",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "25",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "L/R Image Settings",
+        "settings": [
+          {
+            "type": "imageManager",
+            "id": "leftImage",
+            "label": "Left Image",
+            "default": {
+              "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/img.png?t=1714372109",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "range",
+            "id": "leftImageWidth",
+            "label": "Left Image Width",
+            "default": 100,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type":"range",
+            "id":"leftImagePositionYAxis",
+            "label":"Left Image Position Y Axis",
+            "default":0,
+            "typeMeta":{
+              "rangeValues":{
+                "min":-500,
+                "max":500,
+                "step":1
+              }
+            }
+          },
+          {
+            "type":"range",
+            "id":"leftImagePositionXAxis",
+            "label":"Left Image Position X Axis",
+            "default":0,
+            "typeMeta":{
+              "rangeValues":{
+                "min":-500,
+                "max":500,
+                "step":1
+              }
+            }
+          },
+          {
+            "type": "imageManager",
+            "id": "rightImage",
+            "label": "Right Image",
+            "default": {
+              "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/img-1.png?t=1714372111",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "range",
+            "id": "rightImageWidth",
+            "label": "Right Image Width",
+            "default": 100,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+           "type": "range",
+           "id":"rightImagePositionYAxis",
+            "label":"Right Image Position Y Axis",
+            "default":0,
+            "typeMeta":{
+              "rangeValues":{
+                "min":-500,
+                "max":500,
+                "step":1
+              }
+            }
+          },
+          {
+            "type":"range",
+            "id":"rightImagePositionXAxis",
+            "label":"Right Image Position X Axis",
+            "default":0,
+            "typeMeta":{
+              "rangeValues":{
+                "min":-500,
+                "max":500,
+                "step":1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Center Content Settings",
+        "settings": [
+          {
+            "type": "input",
+            "id": "title",
+            "label": "Title",
+            "default": "Request a Free Quote"
+          },
+          {
+            "type": "color",
+            "id": "titleColor",
+            "label": "Title Color",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "id": "titleSize",
+            "label": "Title Size",
+            "default": 40,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "id": "titleMargin",
+            "label": "Title Margin",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "id": "fontWeightTitle",
+            "label": "Font weight Title",
+            "default": "600",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Thin",
+                  "value": "100"
+                },
+                {
+                  "label": "Extra Light",
+                  "value": "200"
+                },
+                {
+                  "label": "Light",
+                  "value": "300"
+                },
+                {
+                  "label": "Normal",
+                  "value": "400"
+                },
+                {
+                  "label": "Medium",
+                  "value": "500"
+                },
+                {
+                  "label": "Semi Bold",
+                  "value": "600"
+                },
+                {
+                  "label": "Bold",
+                  "value": "700"
+                },
+                {
+                  "label": "Extra Bold",
+                  "value": "800"
+                },
+                {
+                  "label": "Black",
+                  "value": "900"
+                }
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "id": "descriptionText",
+            "label": "Description Text",
+            "default": "When someone visits your church for the first time, what will be their first impression? Are they finding their way around your building without getting lost? Is your visual message clear and consistent throughout every banner/sign that is presented to them? Get a Free Quote Contact Us "
+          },
+          {
+            "type": "color",
+            "id": "descriptionColor",
+            "label": "Description Color",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "id": "descriptionSize",
+            "label": "Description Size",
+            "default": 14,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type":"select",
+            "id":"descriptionFontWeight",
+            "label":"Description Font Weight",
+            "default":"400",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Thin",
+                  "value": "100"
+                },
+                {
+                  "label": "Extra Light",
+                  "value": "200"
+                },
+                {
+                  "label": "Light",
+                  "value": "300"
+                },
+                {
+                  "label": "Normal",
+                  "value": "400"
+                },
+                {
+                  "label": "Medium",
+                  "value": "500"
+                },
+                {
+                  "label": "Semi Bold",
+                  "value": "600"
+                },
+                {
+                  "label": "Bold",
+                  "value": "700"
+                },
+                {
+                  "label": "Extra Bold",
+                  "value": "800"
+                },
+                {
+                  "label": "Black",
+                  "value": "900"
+                }
+              ]
+            }
+          },
+          {
+            "type":"boxModel",
+            "id":"descriptionMargin",
+            "label":"Description Margin",
+            "default": {
+              "top": {
+                "value": "32",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "32",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type":"range",
+            "id":"CTAButtonGap",
+            "label":"CTA Button Gap",
+            "default":24,
+            "typeMeta":{
+              "rangeValues":{
+                "min":0,
+                "max":200,
+                "step":1
+              }
+            }
+          },
+          {
+            "type": "input",
+            "id": "buttonText",
+            "label": "Button Text",
+            "default": "Get a Free Quote"
+          },
+          {
+            "type": "input",
+            "id": "rfq_get_free_quote",
+            "label": "Link",
+            "default": "#"
+          },
+          {
+            "type": "color",
+            "id": "buttonTextColor",
+            "label": "Button Text Color",
+            "default": "#1e1e1e"
+          },
+          {
+            "type":"color",
+            "id":"buttonHoverTextColor",
+            "label":"Button Hover Text Color",
+            "default":"#ffffff"
+            
+          },
+          {
+            "type": "color",
+            "id": "buttonBackgroundColor",
+            "label": "Button Background Color",
+            "default": "#ffffff"
+          },
+          {
+            "type":"color",
+            "id":"buttonHoverBackgroundColor",
+            "label":"Button Hover Background Color",
+            "default":"#e5ac17"
+
+          },
+          {
+            "type":"select",
+            "id":"buttonFontWeight",
+            "label":"Button Font Weight",
+            "default":"700",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Thin",
+                  "value": "100"
+                },
+                {
+                  "label": "Extra Light",
+                  "value": "200"
+                },
+                {
+                  "label": "Light",
+                  "value": "300"
+                },
+                {
+                  "label": "Normal",
+                  "value": "400"
+                },
+                {
+                  "label": "Medium",
+                  "value": "500"
+                },
+                {
+                  "label": "Semi Bold",
+                  "value": "600"
+                },
+                {
+                  "label": "Bold",
+                  "value": "700"
+                },
+                {
+                  "label": "Extra Bold",
+                  "value": "800"
+                },
+                {
+                  "label": "Black",
+                  "value": "900"
+                }
+              ]
+            }
+          },
+          {
+            "type": "range",
+            "id": "buttonSize",
+            "label": "Button Size",
+            "default": 16,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "id": "buttonPadding",
+            "label": "Button Padding",
+            "default": {
+              "top": {
+                "value": "8",
+                "type": "px"
+              },
+              "right": {
+                "value": "14",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "8",
+                "type": "px"
+              },
+              "left": {
+                "value": "14",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "range",
+            "id": "buttonBorderRadius",
+            "label": "Button Border Radius",
+            "default": 8,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type":"input",
+            "id":"ctaText",
+            "label":"CTA Text",
+            "default":"Contact Us"
+            
+          },
+          {
+            "type":"input",
+            "id":"rfq_contact_us",
+            "label":"Link:",
+            "default":"#"
+            
+          },
+          {
+            "type": "select",
+            "id": "ctaFontWeight",
+            "label": "CTA Font Weight",
+            "default": "700",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Thin",
+                  "value": "100"
+                },
+                {
+                  "label": "Extra Light",
+                  "value": "200"
+                },
+                {
+                  "label": "Light",
+                  "value": "300"
+                },
+                {
+                  "label": "Normal",
+                  "value": "400"
+                },
+                {
+                  "label": "Medium",
+                  "value": "500"
+                },
+                {
+                  "label": "Semi Bold",
+                  "value": "600"
+                },
+                {
+                  "label": "Bold",
+                  "value": "700"
+                },
+                {
+                  "label": "Extra Bold",
+                  "value": "800"
+                },
+                {
+                  "label": "Black",
+                  "value": "900"
+                }
+              ]
+            }
+          },
+          {
+            "type": "color",
+            "id": "ctaTextColor",
+            "label": "CTA Text Color",
+            "default": "#1e1e1e"
+          },
+          {
+            "type": "color",
+            "id": "ctaHoverTextColor",
+            "label": "CTA Hover Text Color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "ctaBackgroundColor",
+            "label": "CTA Background Color",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "ctaHoverColor",
+            "label": "CTA Hover Color",
+            "default": "#ffff00"
+          },
+          {
+            "type":"color",
+            "id":"ctaHoverBackgroundColor",
+            "label":"CTA Hover Background Color",
+            "default":"#000000"
+          },
+          {
+            "type": "range",
+            "id": "ctaSize",
+            "label": "CTA Size",
+            "default": 16,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "id": "ctaPadding",
+            "label": "CTA Padding",
+            "default": {
+              "top": {
+                "value": "8",
+                "type": "px"
+              },
+              "right": {
+                "value": "14",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "8",
+                "type": "px"
+              },
+              "left": {
+                "value": "14",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "range",
+            "id": "ctaBorderRadius",
+            "label": "CTA Border Radius",
+            "default": 8,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              }
+            }
+          },
+          {
+            "type":"color",
+            "id":"ctaBorderColor",
+            "label":"CTA Border Color",
+            "default":"#333"
+          }
+        ]
+      }
+    ]
+  }
+]

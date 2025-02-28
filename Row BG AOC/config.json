@@ -1,0 +1,154 @@
+{
+  "container_padding": {
+    "top": {
+      "value": "24",
+      "type": "px"
+    },
+    "right": {
+      "value": "64",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "24",
+      "type": "px"
+    },
+    "left": {
+      "value": "64",
+      "type": "px"
+    }
+  },
+  "container_background_image": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/custom-design-background-image.jpg?t=1713496187",
+    "type": "IMAGE_MANAGER"
+  },
+  "column_1_width": 50,
+  "column_1_padding": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "column_2_padding": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "title_text": "Need help with your design?",
+  "title_font_size": 32,
+  "title_color": "#000000",
+  "title_font_weight": "700",
+  "title_spacing": {
+    "top": {
+      "value": "24",
+      "type": "px"
+    },
+    "right": {
+      "value": "64",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "24",
+      "type": "px"
+    },
+    "left": {
+      "value": "64",
+      "type": "px"
+    }
+  },
+  "description_text": "Let our designers personalize your banner with custom text, colors or add your church's logo at no additional cost. When it comes to banners, we can do almost anything to the stock designs you see online. Our team will take over and will send email proofs back to you within 24hrs or less!",
+  "description_font_size": 16,
+  "description_color": "#000000",
+  "description_font_weight": "400",
+  "description_spacing": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "cta_text": "Contact Us",
+  "cta_link": "#",
+  "cta_font_size": 16,
+  "cta_color": "#ffffff",
+  "cta_background_color": "#f8b60f",
+  "cta_font_weight": "700",
+  "cta_padding": {
+    "top": {
+      "value": "16",
+      "type": "px"
+    },
+    "right": {
+      "value": "24",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "16",
+      "type": "px"
+    },
+    "left": {
+      "value": "24",
+      "type": "px"
+    }
+  },
+  "cta_margin": {
+    "top": {
+      "value": "10",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "4",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "cta_border_radius": 6,
+  "hover_cta_text_color": "#ffffff",
+  "hover_cta_background_color": "#f8b60f",
+  "main_image": {
+    "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/rectangle-1-5-.png?t=1717481404",
+    "type": "IMAGE_MANAGER"
+  }
+}

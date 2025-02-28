@@ -1,0 +1,518 @@
+[
+  {
+    "type": "tab",
+    "label":"Row Banner",
+    "sections": [
+        {
+          "label":"Container Settings",
+          "settings":[
+            {
+              "type":"boxModel",
+              "label":"Box Padding",
+              "id":"container_padding",
+              "default": {
+                  "top": {
+                    "value": "24",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "64",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "24",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "64",
+                    "type": "px"
+                  }
+              }
+            },
+            {
+                "type": "imageManager",
+                "id": "container_background_image",
+                "label":"Background Image",
+                "default": {
+                  "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/custom-design-background-image.jpg?t=1713496187",
+                  "type": "IMAGE_MANAGER"
+                }
+            }
+          ]
+        },
+        {
+          "label":"Column Settings",
+          "settings":[
+            {
+              "type":"range",
+              "id":"column_1_width",
+              "label":"Column 1 Width",
+              "default":50,
+              "typeMeta":{
+                  "rangeValues":{
+                  "min": 0,
+                  "max": 100,
+                  "step":0.1,
+                  "unit":"%"
+                  }
+              }
+            },
+            {
+              "type":"boxModel",
+              "id":"column_1_padding",
+              "label":"Column 1 Padding",
+              "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+            },
+            {
+              "type":"range",
+              "id":"column_2_width",
+              "label":"Column 2 Width (0) if auto width",
+              "default":0,
+              "typeMeta":{
+                  "rangeValues":{
+                  "min": 0,
+                  "max": 100,
+                  "step":1,
+                  "unit":"%"
+                  }
+              }
+            },
+            {
+              "type":"boxModel",
+              "id":"column_2_padding",
+              "label":"Column 2 Padding",
+              "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+              }
+            }
+          ]
+        },
+        {
+          "label":"Content Settings",
+          "settings":[
+              {
+                "type":"input",
+                "id":"title_text",
+                "label":"Title",
+                "default":"Need help with your design?"
+              },
+              {
+                "type":"range",
+                "id":"title_font_size",
+                "label":"Title Font Size",
+                "default":32,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":1,
+                    "unit":"px"
+                    }
+                }
+                
+              },
+              {
+                "type":"color",
+                "id":"title_color",
+                "label":"Title Color",
+                "default":"#000000"
+              },
+              {
+                "type": "select",
+                "id": "title_font_weight",
+                "label": "Title Font Weight",
+                "default": "700",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type":"boxModel",
+                "id":"title_spacing",
+                "label":"Title Spacing",
+                "default": {
+                  "top": {
+                    "value": "24",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "64",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "24",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "64",
+                    "type": "px"
+                  }
+                }
+              },
+              {
+                "type":"input",
+                "id":"description_text",
+                "label":"Description",
+                "default":"Let our designers personalize your banner with custom text, colors or add your church's logo at no additional cost. When it comes to banners, we can do almost anything to the stock designs you see online. Our team will take over and will send email proofs back to you within 24hrs or less!"
+              },
+              {
+                "type":"range",
+                "id":"description_font_size",
+                "label":"Description Font Size",
+                "default":16,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"description_color",
+                "label":"Description Color",
+                "default":"#000000"
+              },
+              {
+                "type": "select",
+                "id": "description_font_weight",
+                "label": "Description Font Weight",
+                "default": "400",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type":"boxModel",
+                "id":"description_spacing",
+                "label":"Description Spacing",
+                "default": {
+                  "top": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "right": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "bottom": {
+                    "value": "0",
+                    "type": "px"
+                  },
+                  "left": {
+                    "value": "0",
+                    "type": "px"
+                  }
+                }
+              },
+              {
+                "type":"input",
+                "id":"cta_text",
+                "label":"CTA Text",
+                "default":"Contact Us"
+              },
+              {
+                "type":"input",
+                "id":"cta_link",
+                "label":"CTA URL",
+                "default":"#"
+              },
+              {
+                "type":"range",
+                "id":"cta_font_size",
+                "label":"CTA Font Size",
+                "default":16,
+                "typeMeta":{
+                    "rangeValues":{
+                    "min": 0,
+                    "max": 100,
+                    "step":1,
+                    "unit":"px"
+                    }
+                }
+              },
+              {
+                "type":"color",
+                "id":"cta_color",
+                "label":"CTA Text Color",
+                "default":"#ffffff"
+              },
+              {
+                "type":"color",
+                "id":"cta_background_color",
+                "label":"CTA Background Color",
+                "default":"#f8b60f"
+              },
+              {
+                "type": "select",
+                "id": "cta_font_weight",
+                "label": "CTA Font Weight",
+                "default": "700",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Thin",
+                      "value": "100"
+                    },
+                    {
+                      "label": "Extra Light",
+                      "value": "200"
+                    },
+                    {
+                      "label": "Light",
+                      "value": "300"
+                    },
+                    {
+                      "label": "Normal",
+                      "value": "400"
+                    },
+                    {
+                      "label": "Medium",
+                      "value": "500"
+                    },
+                    {
+                      "label": "Semi Bold",
+                      "value": "600"
+                    },
+                    {
+                      "label": "Bold",
+                      "value": "700"
+                    },
+                    {
+                      "label": "Extra Bold",
+                      "value": "800"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "900"
+                    }
+                  ]
+                }
+              },
+              {
+                "type":"boxModel",
+                "id":"cta_padding",
+                "label":"CTA Padding",
+                "default": {
+                  "top": {
+                      "value": "16",
+                      "type": "px"
+                    },
+                  "right": {
+                      "value": "24",
+                      "type": "px"
+                      },
+                  "bottom":{
+                      "value": "16",
+                      "type": "px"
+                      },
+                  "left": {
+                      "value": "24",
+                      "type": "px"
+                      }
+                  }
+            },
+            {
+              "type":"boxModel",
+                "id":"cta_margin",
+                "label":"CTA Margin",
+                "default": {
+                  "top": {
+                      "value": "10",
+                      "type": "px"
+                    },
+                  "right": {
+                      "value": "0",
+                      "type": "px"
+                      },
+                  "bottom":{
+                      "value": "4",
+                      "type": "px"
+                      },
+                  "left": {
+                      "value": "0",
+                      "type": "px"
+                      }
+                }
+            },
+            {
+              "type":"range",
+              "id":"cta_border_radius",
+              "label":"CTA Border Radius",
+              "default":6,
+              "typeMeta":{
+                  "rangeValues":{
+                  "min": 0,
+                  "max": 100,
+                  "step":1,
+                  "unit":"px"
+                  }
+              }
+            },
+            {
+              "type":"color",
+              "id":"hover_cta_text_color",
+              "label":"Hover CTA Text",
+              "default":"#ffffff"
+            },
+            {
+              "type":"color",
+              "id":"hover_cta_background_color",
+              "label":"Hover Background CTA",
+              "default":"#f8b60f" 
+            }
+          ]
+        },
+        {
+          "label":"Main Image Settings",
+          "settings":[
+            {
+              "type": "imageManager",
+              "id": "main_image",
+              "label":"Main Image",
+              "default": {
+                "src": "https://cdn11.bigcommerce.com/s-cnam78/images/stencil/original/image-manager/rectangle-1-5-.png?t=1717481404",
+                "type": "IMAGE_MANAGER"
+              }
+            },
+            {
+              "type":"range",
+              "id":"image_y_position",
+              "label":"Image Y-axis Position",
+              "default":0,
+              "typeMeta":{
+                  "rangeValues":{
+                  "min": -100,
+                  "max": 100,
+                  "step":1,
+                  "unit":"px"
+                  }
+              }
+            },
+            {
+              "type":"range",
+              "id":"image_x_position",
+              "label":"Image X-axis Position",
+              "default":0,
+              "typeMeta":{
+                "rangeValues":{
+                "min": -100,
+                "max": 100,
+                "step":1,
+                "unit":"px"
+                }
+              }
+            }
+          ]
+        }
+    ]
+  }
+]
