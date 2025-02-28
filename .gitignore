@@ -1,4 +1,3 @@
 .env
 .gitignore
 node_modules/
-widget-builder/node_modules/
